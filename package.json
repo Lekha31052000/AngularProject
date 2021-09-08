@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "angularx-social-login": "^4.0.1",
+    "cors": "^2.8.5"
+  }
+}
