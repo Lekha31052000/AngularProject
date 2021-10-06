@@ -4,6 +4,7 @@ const RegisterSchema=new mongoose.Schema({
     name:String,
     email:String,
     password:String,
+    age:String,
     // hash:String,
      salt:String
 })
