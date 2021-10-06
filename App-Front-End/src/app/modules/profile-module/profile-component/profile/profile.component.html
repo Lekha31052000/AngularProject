@@ -1,0 +1,113 @@
+<ul class="flex justify-between px-8 py-4">
+  <li class="mr-3">
+    <a
+      class="
+        inline-block
+        border border-blue-500
+        rounded
+        py-2
+        px-4
+        bg-red-500
+        hover:bg-red-700
+        text-white
+      "
+      (click)="Logout()"
+      routerLink="/login"
+      >LOGOUT</a
+    >
+  </li>
+</ul>
+
+<!-- <h1>NAME:{{ message?.name }}</h1> -->
+<!-- <h1>PASSWORD:{{ message?.password }}</h1> -->
+
+<div
+  class="
+    bg-pink-200
+    border-t-4 border-teal-500
+    rounded-b
+    text-white
+    px-4
+    py-3
+    shadow-md
+    text-center
+  "
+  role="alert"
+>
+  <div class="flex justify-center">
+    <!-- <div class="py-1">
+      <svg
+        class="fill-current h-6 w-6 text-teal-500 mr-4"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"
+        />
+      </svg>
+    </div> -->
+    <div class="justify-center">
+      <h1 class="font-bold text-3xl text-center mt-8 text-yellow-700">
+        Hey {{ message?.name }}💫
+      </h1>
+      <h2 class="text-center text-gray-900 mt-8">
+        Thank you for logging into our website😊
+      </h2>
+      <h4 class="text-center text-2xl mt-8 mb-8 text-blue-700">
+        Your email -
+        <span class="text-gray-700">{{ message?.email }}</span>
+      </h4>
+      <h4 class="text-center mt-8 mb-8 text-blue-700 text-2xl">
+        Your age-
+        <span class="text-gray-700">{{ message?.age }}</span>
+      </h4>
+      <button
+        class="
+          block
+          w-full
+          bg-yellow-500
+          hover:bg-yellow-600
+          text-white
+          font-bold
+          py-2
+          px-4
+          mb-6
+          focus:outline-none focus:shadow-outline
+        "
+        type="submit"
+        routerLink="/profileEdit"
+      >
+        Edit Profile
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="max-w-sm rounded overflow-hidden shadow-lg"> -->
+<!-- <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"> -->
+<!-- <div class="px-6 py-4">
+    <div class="font-bold text-xl items-center mb-2">
+      Welcome {{ message?.name }}!
+    </div>
+  </div> -->
+<!-- </div> -->
+<!-- <div class="bg-white mb-4 flex justify-center mt-20 text-center">
+  <table class="table-auto">
+    <thead>
+      <tr>
+        <th class="text-gray-900">NAME</th>
+        <th class="text-gray-900">EMAIL</th>
+        <th class="text-gray-900">DOB</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-gray-700">
+          {{ message?.name }}
+        </td>
+        <td class="text-gray-700 pl-8">{{ message?.email }}</td>
+        <td class="text-gray-700 pl-8">{{ message?.dob }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->

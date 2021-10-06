@@ -1,0 +1,160 @@
+<app-registerNav></app-registerNav>
+
+<h1 class="text-red-600 text-center mt-8 font-bold mb-8 text-2xl">
+  <i> REGISTER HERE!</i>
+</h1>
+<div class="flex flex-col justify-center items-center">
+  <form
+    class="bg-white shadow-md rounded px-8 pt-10 pb-8 mb-4 mt-15"
+    #f="ngForm"
+    (ngSubmit)="onSubmit(f.value)"
+  >
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+        Username
+      </label>
+      <input
+        class="
+          shadow
+          appearance-none
+          border
+          rounded
+          w-full
+          py-2
+          px-3
+          text-gray-700
+          leading-tight
+          focus:outline-none focus:shadow-outline
+        "
+        ngModel
+        name="name"
+        id="username"
+        type="text"
+        placeholder="Username"
+      />
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+        Email
+      </label>
+      <input
+        class="
+          shadow
+          appearance-none
+          border
+          rounded
+          w-full
+          py-2
+          px-3
+          text-gray-700
+          leading-tight
+          focus:outline-none focus:shadow-outline
+        "
+        ngModel
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Email"
+      />
+    </div>
+    <!-- <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+        Email
+      </label>
+      <input
+        class="
+          shadow
+          appearance-none
+          border
+          rounded
+          w-full
+          py-2
+          px-3
+          text-gray-700
+          leading-tight
+          focus:outline-none focus:shadow-outline
+        "
+        id="email"
+        ngModel
+        name="email"
+        type="email"
+        placeholder="Email"
+      />
+    </div> -->
+
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+        Password
+      </label>
+      <input
+        class="
+          shadow
+          appearance-none
+          border
+          rounded
+          w-full
+          py-2
+          px-3
+          text-gray-700
+          leading-tight
+          focus:outline-none focus:shadow-outline
+        "
+        id="password"
+        ngModel
+        name="password"
+        type="password"
+        placeholder="*********"
+      />
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="age">
+        Age
+      </label>
+      <input
+        class="
+          shadow
+          appearance-none
+          border
+          rounded
+          w-full
+          py-2
+          px-3
+          text-gray-700
+          leading-tight
+          focus:outline-none focus:shadow-outline
+        "
+        id="age"
+        ngModel
+        name="age"
+        type="text"
+      />
+    </div>
+
+    <div class="flex items-center justify-between">
+      <button
+        class="
+          bg-blue-500
+          hover:bg-blue-700
+          text-white
+          font-bold
+          py-2
+          px-4
+          rounded
+          focus:outline-none focus:shadow-outline
+        "
+        type="submit"
+      >
+        Register
+      </button>
+
+      <!-- <div class="g-signin2" data-onsuccess="onSignIn">google</div> -->
+      <a class="text-blue-700 font-bold pl-8" routerLink="/google"
+        >SignIn with google</a
+      >
+    </div>
+  </form>
+</div>
+
+<!-- component -->

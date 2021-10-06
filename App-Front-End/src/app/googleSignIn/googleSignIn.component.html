@@ -1,0 +1,61 @@
+<!-- <div *ngIf="!user" class="flex items-center justify-between">
+  <div class="text-red-600 text-center mt-10 font-bold">
+    LOGIN TO GOOGLE HERE!
+  </div>
+  <div class="flex items-center justify-between">
+    <button
+      class="
+        bg-blue-500
+        hover:bg-blue-700
+        text-white
+        font-bold
+        py-2
+        px-4
+        rounded
+        focus:outline-none focus:shadow-outline
+      "
+      type="submit"
+      (click)="signIn()"
+    >
+      Sign In
+    </button>
+  </div>
+</div>
+
+<div *ngIf="user" class="flex items-center justify-between">
+  <div class="text-red-600 text-center mt-10 font-bold">
+    LOGIN TO GOOGLE HERE!!!!
+  </div>
+  <div class="flex items-center justify-between">
+    <img src="{{ user.photoUrl }}" />
+  </div>
+  <div class="flex items-center justify-between">
+    <h4 class="text-blue-600 text-center mt-10 font-bold">{{ user.name }}</h4>
+    <p class="text-green-600 text-center mt-10 font-bold">{{ user.email }}</p>
+  </div>
+
+  <div class="flex items-center justify-between">
+    <button
+      class="
+        bg-blue-500
+        hover:bg-blue-700
+        text-white
+        font-bold
+        py-2
+        px-4
+        rounded
+        focus:outline-none focus:shadow-outline
+      "
+      type="submit"
+      (click)="signOut()"
+    >
+      Sign Out
+    </button>
+  </div>
+</div> -->
+
+<div>
+  <h4>{{ user.name }}</h4>
+  <p>{{ user.email }}</p>
+</div>
+<!-- <a href="http://localhost:5000/google/callback">Authenticate</a> -->
